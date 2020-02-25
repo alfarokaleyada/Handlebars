@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/styles.css">
+
+<div class="container">
+	<div class="img-container">
+		<img src="https://mcdonalds.com.au/sites/mcdonalds.com.au/files/Product_thumb_BigMac-201904.png" alt="Burger images">
+	</div>
+	<h1 class="title">Eat-Da-Burger</h1>
+	<div class="lists-container">
+		{{!-- not devoured --}}
+		<div>
+
+			{{#each burgers}}
+				{{#unless isDevoured }}
+					<div>
+						{{ name }} <button class="devour" data-id="{{ id }}">Devour it</button>
+					</div>
+				{{/unless}}
+			{{/each}}
+
+		</div>
+		{{!-- devoured --}}
+					<div>
+
+						{{#each burgers}}
+							{{#if isDevoured }}
+								<div>
+									{{ name }}
+								</div>
+							{{/if}}
+						{{/each}}
+
+					</div>
+				</div>
+				<div class="inputContainer">
+					<input type="text" id="newBurger"/>
+				</div>
+			</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/scripts.js"></script>

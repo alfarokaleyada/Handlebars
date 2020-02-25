@@ -1,0 +1,27 @@
+.img-container {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	text-align: center;
+}
+
+.lists-container {
+	display: flex;
+	justify-content: space-around;
+
+	margin: 100px 0;
+}
+
+.inputContainer {
+	display: flex;
+	justify-content: center;
+}
+
+input {
+	width: 400px;
+	height: 30px;
+	border-radius: 6px;
+	outline: none;
+}
